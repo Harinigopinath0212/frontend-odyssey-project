@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inside a Computer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Background -->
+<canvas id="bg"></canvas>
+
+<!-- Loader -->
+<div id="loader">
+  <h1>Loading Experience...</h1>
+</div>
+
+<!-- Progress Bar -->
+<div id="progress-bar"></div>
+
+<!-- Navigation Dots -->
+<div class="nav-dots">
+  <a href="#hero"></a>
+  <a href="#cpu"></a>
+  <a href="#ram"></a>
+  <a href="#storage"></a>
+  <a href="#gpu"></a>
+  <a href="#end"></a>
+</div>
+
+<!-- Cursor -->
+<div class="cursor"></div>
+
+<!-- Data Flow Dot -->
+<div class="dot"></div>
+
+<!-- HERO -->
+<section id="hero" class="panel hero">
+  <h1 id="typing" class="glow"></h1>
+  <p>You click a button...</p>
+  <p class="fade-text">Initiating process...</p>
+  <button onclick="toggleMode()">Toggle Mode</button>
+</section>
+
+<!-- CPU -->
+<section id="cpu" class="panel cpu">
+  <h1>🧠 CPU</h1>
+  <p>The signal reaches CPU for processing...</p>
+  <p class="fade-text">Processing instructions...</p>
+  <button onclick="showInfo()">Know More</button>
+  <p id="info" class="hidden">CPU processes instructions and controls all operations.</p>
+</section>
+
+<!-- RAM -->
+<section id="ram" class="panel ram">
+  <h1>⚡ RAM</h1>
+  <p>Data loads instantly into temporary memory...</p>
+  <p class="fade-text">Fast data access...</p>
+</section>
+
+<!-- STORAGE -->
+<section id="storage" class="panel storage">
+  <h1>💾 Storage</h1>
+  <p>Important data is stored permanently...</p>
+  <p class="fade-text">Saving data...</p>
+</section>
+
+<!-- GPU -->
+<section id="gpu" class="panel gpu">
+  <h1>🎮 GPU & Network</h1>
+  <p>Visual output is rendered and sent to your screen...</p>
+  <p class="fade-text">Rendering output...</p>
+</section>
+
+<!-- END -->
+<section id="end" class="panel end">
+  <h1 class="glow">All this happens in milliseconds ⚡</h1>
+  <p class="fade-text">Process complete!</p>
+</section>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
